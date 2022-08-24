@@ -1,16 +1,55 @@
 ---
-layout: pairwise
-title: "Which one is the most intelligent?"
-nextButton: start
+layout: questions
+title: "溯溪問卷-😌滿意度調查"
+nextButton: 帶我到下一頁~
 pageNo: 2
-questions:
-  - title: Adult Human
-    image: "https://i.kinja-img.com/gawker-media/image/upload/s--t3v-5K6H--/c_scale,f_auto,fl_progressive,q_80,w_800/bbzzph87t4jpwmzk54z3.jpg"
-    img_pos: "10% 80%"
-  - title: Monkey
-    image: "https://images1.miaminewtimes.com/imager/u/745xauto/10764041/instagram-monkey.jpg"
-    img_pos: "20% 20%"
-  - title: Apple Siri
-    image: "https://boygeniusreport.files.wordpress.com/2014/03/siri-ios-7-sign.jpg?quality=98&strip=all&w=768"
-    img_pos: "center"
 ---
+
+{% likert name:"agenda_morning" %}
+# 早上的活動👣
+[](str_agree) 很滿意🤩
+[](agree) 還算滿意😊
+[](neutral) 沒想法~✔️
+[](disagree) 有點不滿意🤔
+[](str_disagree) 非常不滿意😠
+{% endlikert %}
+
+{% likert name:"agenda_afternoon" %}
+# 下午的活動👥
+[](str_agree) 很滿意🤩
+[](agree) 還算滿意😊
+[](neutral) 沒想法~✔️
+[](disagree) 有點不滿意🤔
+[](str_disagree) 非常不滿意😠
+{% endlikert %}
+
+{% likert name:"price" %}
+# 價格💰
+[](str_agree) 很滿意🤩
+[](agree) 還算滿意😊
+[](neutral) 沒想法~✔️
+[](disagree) 有點不滿意🤔
+[](str_disagree) 非常不滿意😠
+{% endlikert %}
+
+{% likert name:"food" %}
+# 食物🍔
+[](str_agree) 很滿意🤩
+[](agree) 還算滿意😊
+[](neutral) 沒想法~✔️
+[](disagree) 有點不滿意🤔
+[](str_disagree) 非常不滿意😠
+{% endlikert %}
+
+{% likert name:"traffic" %}
+# 交通安排🚌
+[](str_agree) 很滿意🤩
+[](agree) 還算滿意😊
+[](neutral) 沒想法~✔️
+[](disagree) 有點不滿意🤔
+[](str_disagree) 非常不滿意😠
+{% endlikert %}
+
+{% text_input name:"page_2_clarification" type:"textarea" %}
+[有需要的話可以在此補充說明~](page_2_clarification)
+{% endtext_input %}
